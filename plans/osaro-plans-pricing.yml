@@ -1,0 +1,20 @@
+generated: '2026-08-26'
+method: searched
+source: https://www.osaro.com/contact
+plan_count: 0
+note: >-
+  OSARO publishes no pricing, no plans and no tiers. This is a deliberate,
+  provider-authored posture rather than a gap in our search: https://www.osaro.com/pricing
+  301-redirects to https://www.osaro.com/contact, a sales enquiry form. The complete
+  74-URL sitemap contains no pricing page. OSARO sells capital robotic work cells and
+  a Robotics-as-a-Service subscription (its own newsroom discusses RaaS commercial
+  models) priced per deployment through enterprise sales and integrator partners.
+pricing_model: enterprise-quote-only
+plans: []
+evidence:
+- url: https://www.osaro.com/pricing
+  status: 301
+  redirects_to: https://www.osaro.com/contact
+- url: https://www.osaro.com/sitemap.xml
+  status: 200
+  note: 74 URLs, none of which is a pricing or plans page.

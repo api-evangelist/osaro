@@ -1,0 +1,47 @@
+generated: '2026-08-26'
+method: searched
+source: https://www.osaro.com/blog/osaro-completes-soc-2-type-ii-audit-reinforcing-its-commitment-to-customer-trust-and-data-security
+note: >-
+  OSARO publishes no machine-readable API contract, so every contract-derived
+  conformance assertion below is recorded as not-applicable rather than false.
+  The one standard OSARO does publicly attest to is SOC 2 Type II, announced on
+  its own newsroom and deliberately surfaced at https://www.osaro.com/security,
+  which 301-redirects to that announcement.
+conformance:
+- id: soc2-type-ii
+  conforms: true
+  evidence: >-
+    "OSARO has maintained its SOC 2 Type II certification for the third consecutive
+    year" — company newsroom, 2026-08-12. SOC 2 is the AICPA service-organization
+    control standard. Third consecutive year of Type II (operating effectiveness,
+    not just design). Also announced in an earlier post, /blog/osaro-achieves-soc-2-
+    type-ii-compliance-prioritizing-customer-data-security.
+  url: https://www.osaro.com/blog/osaro-completes-soc-2-type-ii-audit-reinforcing-its-commitment-to-customer-trust-and-data-security
+  http_status: 200
+- id: oauth2
+  conforms: false
+  evidence: No public API, no authorization server, no OAuth documentation. /.well-known/oauth-authorization-server returned 404.
+- id: oidc
+  conforms: false
+  evidence: /.well-known/openid-configuration returned 404 on www.osaro.com; no other host resolves.
+- id: rfc9457
+  conforms: false
+  evidence: Not applicable — no published API contract or error surface to evaluate.
+- id: pagination
+  conforms: false
+  evidence: Not applicable — no published API contract.
+- id: idempotency
+  conforms: false
+  evidence: Not applicable — no published API contract or write surface.
+domain_standards:
+  applicable: false
+  note: >-
+    REWARD-ONLY check, correctly left empty. domain_standard_conformance reads a
+    CONTRACT declaring a domain standard for its market; OSARO publishes no contract,
+    so there is nothing to read. For completeness, the warehouse-robotics standards
+    that would be probed if a contract existed (VDA 5050 for AMR fleet control, MassRobotics
+    interoperability, ISO 10218 / ISO/TS 15066 for collaborative-robot safety) are nowhere
+    declared in a machine-readable OSARO artifact. OSARO's COO does sit on an ISO standards
+    working group for human-robot collaboration (/blog/driving-safer-human-robot-collaboration-our-coo-joins-iso-standards-working-group),
+    which is standards PARTICIPATION, not contract conformance, and is deliberately not
+    scored as the latter.

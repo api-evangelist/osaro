@@ -1,0 +1,38 @@
+generated: '2026-08-26'
+method: searched
+probe: true
+source: https://www.osaro.com/blog/osaro-completes-soc-2-type-ii-audit-reinforcing-its-commitment-to-customer-trust-and-data-security
+url: https://www.osaro.com/blog/osaro-completes-soc-2-type-ii-audit-reinforcing-its-commitment-to-customer-trust-and-data-security
+trust_center: false
+disclosure_form: newsroom-announcement
+note: >-
+  CORRECTED BY HAND after the automated probe. probe-security-programs.py matched
+  SOC 2 keywords in this page body and filed it as a trust center; it is not one.
+  OSARO operates NO trust center: trust.osaro.com and security.osaro.com do not
+  resolve (NXDOMAIN), and /trust, /trust-center and /compliance all return 404.
+  What OSARO does publish is a certification DISCLOSURE — a dated newsroom post
+  attesting SOC 2 Type II — which the company deliberately surfaces at the shortcut
+  https://www.osaro.com/security (301 -> this post). That is a real, verifiable
+  compliance claim and is wired as `type: Compliance`; it is NOT wired as
+  `type: TrustCenter`, because asserting a trust center the company does not operate
+  would credit OSARO with a surface it never built.
+certifications:
+- name: SOC 2 Type II
+  status: maintained
+  detail: Third consecutive year of SOC 2 Type II (operating effectiveness), announced 2026-08-12.
+  authority: AICPA
+  url: https://www.osaro.com/blog/osaro-completes-soc-2-type-ii-audit-reinforcing-its-commitment-to-customer-trust-and-data-security
+evidence:
+- url: https://www.osaro.com/security
+  status: 301
+  redirects_to: https://www.osaro.com/blog/osaro-completes-soc-2-type-ii-audit-reinforcing-its-commitment-to-customer-trust-and-data-security
+- url: https://www.osaro.com/trust
+  status: 404
+- url: https://www.osaro.com/compliance
+  status: 404
+- url: https://www.osaro.com/trust-center
+  status: 404
+- host: trust.osaro.com
+  status: NXDOMAIN
+- host: security.osaro.com
+  status: NXDOMAIN

@@ -1,0 +1,40 @@
+generated: '2026-08-26'
+method: probed
+source: live GET of /.well-known/* on every OSARO host known to the catalog
+note: >-
+  Every probed path returned 404. www.osaro.com is a Webflow-hosted marketing site
+  and answers unknown /.well-known/* paths with a 404 "Invalid page" HTML body, so
+  there is no served discovery document of any kind. No WellKnown or SecurityTxt
+  pointer is emitted in apis.yml because a recorded absence is not a presence.
+  OSARO publishes no API host: api./docs./developer./developers./app./portal.osaro.com
+  do not resolve in DNS (NXDOMAIN), so there is no second host to probe.
+hosts:
+- host: https://www.osaro.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+unresolved_hosts:
+- host: api.osaro.com
+  status: NXDOMAIN
+- host: docs.osaro.com
+  status: NXDOMAIN
+- host: developer.osaro.com
+  status: NXDOMAIN
+- host: developers.osaro.com
+  status: NXDOMAIN
+- host: app.osaro.com
+  status: NXDOMAIN
+- host: portal.osaro.com
+  status: NXDOMAIN

@@ -1,8 +1,17 @@
 aid: osaro
-name: Osaro
-description: 'Osaro is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+name: OSARO
+description: OSARO is a San Francisco-based industrial AI company that builds machine-learning software
+  for warehouse and fulfillment robotics. Its SightWorks perception platform and AutoModel learning system
+  let industrial robot arms perceive, grasp and place highly variable goods without per-SKU pre-training,
+  3D object models or fixed programming, powering piece picking, robotic bagging, kitting and mixed-case
+  depalletizing in production deployments across five countries. OSARO sells complete robotic work cells
+  and licenses its perception software to robot makers and system integrators, wrapping deployments in
+  its HyperCare support program. The company publishes no public developer program, API documentation
+  or machine-readable API contract; integration with customer estates (WMS/WCS, conveyors, ASRS, AMRs)
+  is delivered as a professional-services engagement through OSARO and its integrator partners rather
+  than through a self-serve API.
 url: https://raw.githubusercontent.com/api-evangelist/osaro/refs/heads/main/apis.yml
+image: https://cdn.prod.website-files.com/68701c86565deda53fa2f1b0/68702c4aefcbf3192f452701_OSARO%20-%20Logo%20-%20Gradient.svg
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +21,14 @@ created: '2026-08-26'
 modified: '2026-08-26'
 tags:
 - Company
+- Robotics
+- Artificial Intelligence
+- Machine Learning
+- Warehouse Automation
+- Logistics
+- Supply Chain
+- Computer Vision
+- Manufacturing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +36,58 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/osaro-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/osaro_stock/
+  url: https://www.osaro.com/
+- type: About
+  url: https://www.osaro.com/about
+- type: Blog
+  url: https://www.osaro.com/media
+- type: FAQ
+  url: https://www.osaro.com/resources/faq
+- type: ContactUs
+  url: https://www.osaro.com/contact
+- type: PrivacyPolicy
+  url: https://www.osaro.com/legal/privacy-notice
+- type: TermsOfService
+  url: https://www.osaro.com/legal/terms-of-use
+- type: Careers
+  url: https://jobs.lever.co/osaro
+- type: LinkedIn
+  url: https://www.linkedin.com/company/osaroinc/
+- type: YouTube
+  url: https://www.youtube.com/@OsaroAI
+- type: Compliance
+  url: conformance/osaro-conformance.yml
+- type: LLMsTxt
+  url: llms/osaro-llms.txt
+- type: Plans
+  url: plans/osaro-plans-pricing.yml
+- type: WellKnownProbe
+  url: well-known/osaro-well-known.yml
+- type: SecurityProbe
+  url: security/osaro-vulnerability-disclosure.yml
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 7
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: OSARO ships its SightWorks perception software only as part of an integrated robotic work cell
+    delivered by its own field team and integrator partners, so its complete 74-URL sitemap contains no
+    developer, docs or API page and no api./docs./developer.osaro.com host exists in DNS.
+  evidence:
+  - url: https://www.osaro.com/sitemap.xml
+    status: 200
+  - url: https://www.osaro.com/developers
+    status: 404
+  - url: https://www.osaro.com/api
+    status: 404
+  - url: https://www.osaro.com/openapi.json
+    status: 404
+  - url: https://api.osaro.com/openapi.json
+    status: 0
+  checked: '2026-08-26'
