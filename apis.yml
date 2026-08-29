@@ -11,6 +11,17 @@ description: OSARO is a San Francisco-based industrial AI company that builds ma
   is delivered as a professional-services engagement through OSARO and its integrator partners rather
   than through a self-serve API.
 url: https://raw.githubusercontent.com/api-evangelist/osaro/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/68701c86565deda53fa2f1b0/68702c4aefcbf3192f452701_OSARO%20-%20Logo%20-%20Gradient.svg
 x-type: company
 x-source: harvest:secondary-market
