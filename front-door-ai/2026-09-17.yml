@@ -1,0 +1,32 @@
+# Front Door AI Index — osaro — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: osaro
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.osaro.com
+  final_host: www.osaro.com
+  ownership: own
+  owner: osaro
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 9
+  host_score: 9
+  density: 9.07
+  words: 992
+  tiers:
+    agentic: 0
+    core: 9
+    model: 0
+  ambiguous: 9
+  top_terms:
+    automation: 7
+    AI: 5
+    artificial intelligence: 1
+    foundation model: 1
+    intelligence: 1
+    large language model: 1
+    machine learning: 1
+    smart: 1
